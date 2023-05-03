@@ -15,7 +15,10 @@
 	"autoload": {
 		"psr-4": {
 			"Generosity\\": "app"
-		}
+		},
+		"files": [
+			"app/framework.php"
+		]
 	},
 	"require": {
 		"php": ">=7.0",
