@@ -1,0 +1,32 @@
+{
+	"name"       : "luthemes/generosity",
+	"type"       : "classicpress-theme",
+	"description": "Generosity is a clean and modern theme.",
+	"keywords"   : [ "classicpress", "theme" ],
+	"homepage"   : "https://luthemes.com/portfolio/generosity",
+	"license"    : "GPL-2.0-or-later",
+	"authors"    : [
+		{
+			"name": "Benjamin Lu",
+			"email": "benlumia007@gmail.com",
+			"homepage": "https://luthemes.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Generosity\\": "app"
+		}
+	},
+	"require": {
+		"php": ">=7.0",
+		"benlumia007/backdrop": "^2.0",
+		"benlumia007/backdrop-customize": "^1.0",
+		"benlumia007/backdrop-fontawesome": "^1.0",
+		"benlumia007/backdrop-fonts": "^1.0",
+		"benlumia007/backdrop-mix-manifest": "^1.0",
+		"benlumia007/backdrop-template-hierarchy": "^1.0",
+		"benlumia007/backdrop-template-manager": "^1.0",
+		"benlumia007/backdrop-template-view": "^1.0",
+		"benlumia007/backdrop-theme": "^1.0"
+	}
+}
