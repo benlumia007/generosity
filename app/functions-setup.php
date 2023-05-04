@@ -31,3 +31,19 @@ add_action( 'after_setup_theme', function() {
 	// Outputs HTML5 markup for core features.
 	add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
 } );
+
+/**
+ * Register menus.
+ *
+ * @link   https://developer.wordpress.org/reference/functions/register_nav_menus/
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'init', function() {
+
+	register_nav_menus( [
+		'primary' => esc_html__( 'Primary Navigation', 'generosity' )
+	] );
+
+}, 5 );
