@@ -36,7 +36,7 @@
 
 	screenreadertext = document.createElement( 'span' );
 	screenreadertext.classList.add( 'screen-reader-text' );
-	screenreadertext.textContent = succotashScreenReaderText.expandMain;
+	screenreadertext.textContent = generosityScreenReaderText.expandMain;
 	button.appendChild( screenreadertext );
 
 	parentLink = container.querySelectorAll( '.menu-item-has-children, .page_item_has_children' );
@@ -51,7 +51,7 @@
 		icon.setAttribute( 'aria-hidden', 'true' );
 
 		screenreadertext.classList.add( 'screen-reader-text' );
-		screenreadertext.textContent = succotashScreenReaderText.expandChild;
+		screenreadertext.textContent = generosityScreenReaderText.expandChild;
 
 		parentLink[i].insertBefore( dropdown, submenu );
 		dropdown.classList.add( 'dropdown-toggle' );
@@ -68,12 +68,12 @@
 				parentLink.className = parentLink.className.replace( ' toggled-on', '' );
 				this.setAttribute( 'aria-expanded', 'false' );
 				submenu.setAttribute ( 'aria-expanded', 'false');
-				screenreadertext.textContent = succotashScreenReaderText.expandChild;
+				screenreadertext.textContent = generosityScreenReaderText.expandChild;
 			} else {
 				parentLink.className += ' toggled-on';
 				this.setAttribute( 'aria-expanded', 'true' );
 				submenu.setAttribute ( 'aria-expanded', 'true');
-				screenreadertext.textContent = succotashScreenReaderText.collapseChild;
+				screenreadertext.textContent = generosityScreenReaderText.collapseChild;
 			}
 		};
 	}
@@ -89,12 +89,12 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
-			screenreadertext.textContent = succotashScreenReaderText.expandMain;
+			screenreadertext.textContent = generosityScreenReaderText.expandMain;
 			menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
-			screenreadertext.textContent = succotashScreenReaderText.collapseMain;
+			screenreadertext.textContent = generosityScreenReaderText.collapseMain;
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}
 	};
