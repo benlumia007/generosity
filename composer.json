@@ -17,7 +17,8 @@
 			"Generosity\\": "app"
 		},
 		"files": [
-			"app/framework.php"
+			"app/framework.php",
+			"app/functions-extras.php"
 		]
 	},
 	"require": {
