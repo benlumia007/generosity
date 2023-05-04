@@ -33,6 +33,7 @@ $generosity->provider( Backdrop\Mix\Manifest\Provider::class );
 $generosity->provider( Backdrop\Template\Hierarchy\Provider::class );
 $generosity->provider( Backdrop\Template\Manager\Provider::class );
 $generosity->provider( Backdrop\Template\View\Provider::class );
+$generosity->provider( Backdrop\Theme\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Register additional service providers for the theme.
@@ -42,8 +43,8 @@ $generosity->provider( Backdrop\Template\View\Provider::class );
 # operate before booting the application. These providers offer supplementary
 # features to the theme.
 
-// $generosity->provider( Succotash\Menu\Provider::class );
-// $generosity->provider( Succotash\Sidebar\Provider::class );
+// $generosity->provider( Generosity\Menu\Provider::class );
+// $generosity->provider( Generosity\Sidebar\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
@@ -53,7 +54,7 @@ $generosity->provider( Backdrop\Template\View\Provider::class );
 # integrate their own binding into the bootstrap process before the app is booted.
 # The action callback receives the application instance as a parameter.
 
-do_action( 'mythic/bootstrap', $generosity );
+do_action( 'generosity/bootstrap', $generosity );
 
 # ------------------------------------------------------------------------------
 # Bootstrap the application.
