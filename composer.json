@@ -20,7 +20,8 @@
 			"app/Site/functions-site.php",
 			"app/framework.php",
 			"app/functions-extras.php",
-			"app/functions-scripts.php"
+			"app/functions-scripts.php",
+			"app/functions-setup.php"
 		]
 	},
 	"require": {
