@@ -47,3 +47,37 @@ add_action( 'init', function() {
 	] );
 
 }, 5 );
+
+/**
+ * Register sidebars.
+ *
+ * @link   https://developer.wordpress.org/reference/functions/register_sidebar/
+ * @link   https://developer.wordpress.org/reference/functions/register_sidebars/
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'widgets_init', function() {
+
+	$args = [
+		'before_widget' => '<aise id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget_title">',
+		'after_title'   => '</h3>'
+	];
+
+	$sidebars = [
+		[
+			'id'   => 'primary',
+			'name' => esc_html__ ('Primary', 'generosity' )
+		],
+		[
+			'id'   => 'secondary',
+			'name' => esc_html__ ('Secondary', 'generosity' )
+		]
+	];
+
+	foreach ( $sidebars as $sidebar ) {
+		register_sidebar( array_merge( $sidebar, $args ) );
+	}
+}, 5 );
