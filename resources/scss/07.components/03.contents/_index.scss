@@ -1,14 +1,19 @@
 .content-area {
-	.entry-header {
-		.entry-metadata {
-			font-family: font-family( date );
-			font-size: $text-3xl;
-			margin-bottom: 0.5rem;
-		}
+	.page,
+	.post {
+		margin-bottom: 3rem;
 
-		.entry-title {
-			margin: 0;
-			padding: 0;
+		.entry-header {
+			.entry-metadata {
+				font-family: font-family( date );
+				font-size: $text-3xl;
+				margin-bottom: 0.5rem;
+			}
+
+			.entry-title {
+				margin: 0;
+				padding: 0;
+			}
 		}
 	}
 }

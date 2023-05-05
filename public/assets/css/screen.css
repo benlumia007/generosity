@@ -71,6 +71,16 @@ h6 {
   margin: 2.33em 0;
 }
 
+figure,
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.figcaption {
+  text-align: center;
+}
+
 .site-container {
   background: #ffffff;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
@@ -419,7 +429,7 @@ h6 {
     list-style-type: none;
     margin: 0.5rem 0;
     opacity: 0;
-    padding: 0.5rem;
+    padding: 0.25rem;
     position: absolute;
     transform: translateY(-1em);
     visibility: hidden;
@@ -443,14 +453,24 @@ h6 {
     transition-delay: 0s, 0s, 0.3s;
   }
 }
-.content-area .entry-header .entry-metadata {
+.content-area .page,
+.content-area .post {
+  margin-bottom: 3rem;
+}
+.content-area .page .entry-header .entry-metadata,
+.content-area .post .entry-header .entry-metadata {
   font-family: var(--font-family-date, "Tangerine", cursive);
   font-size: 1.875rem;
   margin-bottom: 0.5rem;
 }
-.content-area .entry-header .entry-title {
+.content-area .page .entry-header .entry-title,
+.content-area .post .entry-header .entry-title {
   margin: 0;
   padding: 0;
+}
+
+.site-footer {
+  text-align: center;
 }
 
 .screen-reader-text {
